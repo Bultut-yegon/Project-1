@@ -36,18 +36,18 @@ def main_function():
         print("2. withdraw")
         print("3. deposit")
         print("4. Exit")
-        user_choice=input("Enter the number: ")
-        if user_choice=='1':
+        user_choice=int(input("Enter the number: "))
+        if user_choice==1:
             print('********************************')
             Balance(balance)
             
-        elif user_choice=='2':
+        elif user_choice==2:
             print('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$')
             balance-=withdraw(balance)
-        elif user_choice=='3':
+        elif user_choice==3:
             print('################################')
             balance+=deposit()
-        elif user_choice=='4':
+        elif user_choice==4:
             print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
             Running=False
             # exit()
