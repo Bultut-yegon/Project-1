@@ -1,4 +1,5 @@
 import cv2
+# This is computer vision library
 
 def capture_and_display_image():
     # Open a connection to the default camera (usually the first camera detected by the system)
@@ -29,3 +30,4 @@ def capture_and_display_image():
 
 if __name__ == "__main__":
     capture_and_display_image()
+    
